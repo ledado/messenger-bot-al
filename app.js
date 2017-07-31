@@ -14,7 +14,7 @@ app.get('/', function(req, res){
     res.status(200);
 });
 
-app.get('/webhook', function(req, res) {
+app.post('/webhook', function(req, res) {
 
     // if (req.query['hub.mode'] === 'subscribe' &&
     //     req.query['hub.verify_token'] === 'verify_token_aaa') {
