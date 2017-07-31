@@ -81,9 +81,11 @@ function receivedMessage(event) {
             case 'generic':
                 sendGenericMessage(senderID);
                 break;
-
-            default:
+            case 'asdf':
                 sendTextMessage(senderID, messageText);
+                break;
+            default:
+                sendTextMessage(senderID, '');
         }
     } else if (messageAttachments) {
         sendTextMessage(senderID, "Message with attachment received");
@@ -100,7 +102,7 @@ function sendTextMessage(recipientId, messageText) {
             id: recipientId
         },
         message: {
-            text: "Pojeb sa ty kokot!!!"
+            text: messageText
         }
     };
 
