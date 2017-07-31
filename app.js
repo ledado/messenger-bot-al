@@ -81,9 +81,6 @@ function receivedMessage(event) {
             case 'generic':
                 sendGenericMessage(senderID);
                 break;
-            case 'asdf':
-                sendTextMessage(senderID, messageText);
-                break;
             default:
                 sendTextMessage(senderID, 'Ano');
         }
@@ -97,12 +94,21 @@ function sendGenericMessage(recipientId, messageText) {
 }
 
 function sendTextMessage(recipientId, messageText) {
+
+    var m = [
+        'Ano',
+        'Nie',
+        'Si kokot uz',
+        'Samo'
+    ];
+
+
     var messageData = {
         recipient: {
             id: recipientId
         },
         message: {
-            text: messageText
+            text: m[Math.floor(Math.random()*m.length)]
         }
     };
 
