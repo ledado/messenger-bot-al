@@ -35,14 +35,15 @@ app.post('/webhook', function(req, res) {
             var pageID = entry.id;
             var timeOfEvent = entry.time;
 
+            console.log(entry);
             // Iterate over each messaging event
-            entry.messaging.forEach(function(event) {
-                if (event.message) {
-                    receivedMessage(event);
-                } else {
-                    console.log("Webhook received unknown event: ", event);
-                }
-            });
+            // entry.messaging.forEach(function(event) {
+            //     if (event.message) {
+            //         receivedMessage(event);
+            //     } else {
+            //         console.log("Webhook received unknown event: ", event);
+            //     }
+            // });
         });
 
         // Assume all went well.
