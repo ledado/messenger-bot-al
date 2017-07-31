@@ -99,7 +99,26 @@ function sendTextMessage(recipientId, messageText) {
         'Ano',
         'Nie',
         'Si kokot uz',
-        'Samo'
+        'Samo',
+        'Je mi z teba zle',
+        'A ty?',
+        'Same kokotiny pises',
+        'Zomri',
+        'Klop klop',
+        '2 + 2 = 9',
+        'Tuka kabel',
+        'Sme narafali',
+        'Pil si ?',
+        'Ty taty vieš',
+        'Sufuzky',
+        'Sufurky',
+        'Pusti to rychlejsie',
+        'My pojdeme',
+        'Meral som si penis',
+        'Všetko to beriem z rezervou lebo ťa beriem ako mentalne retardovaného',
+        'Ja neviem už',
+        'Tom tom'
+
     ];
 
 
