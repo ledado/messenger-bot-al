@@ -37,13 +37,15 @@ app.post('/webhook', function(req, res) {
 
             console.log(entry);
             // Iterate over each messaging event
-            // entry.messaging.forEach(function(event) {
-            //     if (event.message) {
-            //         receivedMessage(event);
-            //     } else {
-            //         console.log("Webhook received unknown event: ", event);
-            //     }
-            // });
+            entry.messaging.forEach(function(event) {
+                if (event.message) {
+                    console.log('----- message -----');
+                    console.log(event);
+                    receivedMessage(event);
+                } else {
+                    console.log("Webhook received unknown event: ", event);
+                }
+            });
         });
 
         // Assume all went well.
